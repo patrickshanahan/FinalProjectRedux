@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
    
     @IBOutlet weak var titles: UITextField!
+    @IBOutlet weak var igdbView: UIWebView!
     
     @IBOutlet weak var descrip: UITextField!
     
@@ -83,6 +84,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     //5 Add logic to load db. If contactdb has content that means a row was tapped on UiTableView
         
+        
+        
+        
+        
+        
+        
+        
         //**Begin Copy**
         if (contactdb != nil)
         {
@@ -90,6 +98,16 @@ class ViewController: UIViewController {
             descrip.text = contactdb.valueForKey("descrip") as? String
             
             btnSave.setTitle("Update", forState: UIControlState.Normal)
+            
+            //web view loading
+            var shortURL = "https://www.igdb.com/search?q="
+            //add title to end of link
+            shortURL = shortURL + titles.text!
+            
+            let url = NSURL(string: shortURL)
+            let requestObj = NSURLRequest(URL: url!);
+            igdbView.loadRequest(requestObj)
+
         }
         titles.becomeFirstResponder()
         // Do any additional setup after loading the view.

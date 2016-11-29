@@ -20,6 +20,11 @@ class ContactTableViewController: UITableViewController,UISearchResultsUpdating,
     
 //2) Add filter search vars
     
+    
+    @IBOutlet weak var helpButton: UIBarButtonItem!
+    
+    
+    
     //**Begin Copy**
     var filteredTableData = [NSManagedObject]()
     var resultSearchController = UISearchController()

@@ -16,6 +16,9 @@
 		36943C641BCC2A9C00F388BD /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36943C621BCC2A9C00F388BD /* Contact+CoreDataProperties.swift */; };
 		36943C651BCC2A9C00F388BD /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36943C631BCC2A9C00F388BD /* Contact.swift */; };
 		36943C671BCC2E2700F388BD /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36943C661BCC2E2700F388BD /* ContactTableViewController.swift */; };
+		90BA971D1DECEDDB00471D57 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BA971C1DECEDDB00471D57 /* HelpViewController.swift */; };
+		90BA97211DED039000471D57 /* bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90BA971F1DED039000471D57 /* bottom.jpg */; };
+		90BA97221DED039000471D57 /* stack.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 90BA97201DED039000471D57 /* stack.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		36943C621BCC2A9C00F388BD /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		36943C631BCC2A9C00F388BD /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		36943C661BCC2E2700F388BD /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		90BA971C1DECEDDB00471D57 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		90BA971F1DED039000471D57 /* bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bottom.jpg; sourceTree = "<group>"; };
+		90BA97201DED039000471D57 /* stack.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stack.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,7 @@
 		36943C411BCC2A4200F388BD = {
 			isa = PBXGroup;
 			children = (
+				90BA971E1DED035100471D57 /* Images */,
 				36943C661BCC2E2700F388BD /* ContactTableViewController.swift */,
 				36943C621BCC2A9C00F388BD /* Contact+CoreDataProperties.swift */,
 				36943C631BCC2A9C00F388BD /* Contact.swift */,
@@ -72,8 +79,18 @@
 				36943C591BCC2A4300F388BD /* LaunchScreen.storyboard */,
 				36943C5C1BCC2A4300F388BD /* Info.plist */,
 				36943C541BCC2A4300F388BD /* MyContacts.xcdatamodeld */,
+				90BA971C1DECEDDB00471D57 /* HelpViewController.swift */,
 			);
 			path = MyContacts;
+			sourceTree = "<group>";
+		};
+		90BA971E1DED035100471D57 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				90BA971F1DED039000471D57 /* bottom.jpg */,
+				90BA97201DED039000471D57 /* stack.JPG */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +152,8 @@
 			files = (
 				36943C5B1BCC2A4300F388BD /* LaunchScreen.storyboard in Resources */,
 				36943C581BCC2A4300F388BD /* Assets.xcassets in Resources */,
+				90BA97211DED039000471D57 /* bottom.jpg in Resources */,
+				90BA97221DED039000471D57 /* stack.JPG in Resources */,
 				36943C531BCC2A4300F388BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90BA971D1DECEDDB00471D57 /* HelpViewController.swift in Sources */,
 				36943C641BCC2A9C00F388BD /* Contact+CoreDataProperties.swift in Sources */,
 				36943C501BCC2A4300F388BD /* ViewController.swift in Sources */,
 				36943C671BCC2E2700F388BD /* ContactTableViewController.swift in Sources */,
